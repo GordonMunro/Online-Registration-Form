@@ -1,6 +1,17 @@
+/* Global Layout Set-up */
 * {
     box-sizing: border-box;
 }
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/* Section Styles */
+header h2 {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: -10px;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 720px)
