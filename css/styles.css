@@ -4,14 +4,90 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 /* Section Styles */
-header h2 {
-    background-color: black;
+
+h1 {
+    background-color: rgb(68, 67, 67);
     color: whitesmoke;
     text-align: center;
-    padding: 2rem 0;
-    margin-top: -10px;
+    padding: 1.5rem 0;
+    margin-top: -1px;
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+header p {
+    text-align: center;
+    margin: -1rem 0 2rem 0;
+
+}
+.hr-1 {
+    border: 3px solid rgb(68, 67, 67);
+}
+.hr-2 {
+    border: .5px solid rgb(68, 67, 67);
+    margin-top: -5px;
+}
+fieldset {
+    border: none;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+label, header p {
+    color: slategrey;
+}
+select,
+input::placeholder {
+    color: rgb(185, 184, 184);
+}
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+}
+label {
+    display: block;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="phone"],
+textarea,
+select {
+    display: block;
+    margin: 10px 0;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    background-color: rgb(223, 221, 221);
+    border-radius: 5px;
+    font-size: 1rem;;
+}
+#zip {
+    width: 50%;
+}
+.box {
+    display: inline-block;
+  }
+
+.news-label {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 10px 20px 0;
 }
 /* Styles for larger screens */
-@media screen and (min-width: 720px)
+@media screen and (min-width: 720px) {
+    form {
+        margin: 0 auto;
+    }
+}
