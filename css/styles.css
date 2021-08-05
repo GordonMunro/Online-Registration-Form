@@ -27,7 +27,7 @@ h2 {
 form p {
     text-align: center;
     margin: -1rem 0 2rem 0;
-
+    color: slategrey;
 }
 .hr-1 {
     border: 3px solid rgb(68, 67, 67);
@@ -127,4 +127,22 @@ select:focus {
         margin: 0 auto;
         max-width: 600px;
     }
-}
+    input[type="email"],
+    input[type="text"],
+    input[type="phone"],
+    select,
+    label.contact {
+        display: inline-block;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="phone"],
+    select {
+        width: 70%;
+    }
+    label.contact {
+        width: 25%;
+    }
+    .desk {
+        display: block;
+    }
