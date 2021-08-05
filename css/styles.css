@@ -7,6 +7,9 @@ body {
     margin: 0;
 }
 /* Section Styles */
+form {
+    padding: 5px;
+}
 
 h1 {
     background-color: rgb(68, 67, 67);
@@ -33,6 +36,7 @@ header p {
 }
 fieldset {
     border: none;
+    padding: 0;
 }
 legend {
     font-weight: bold;
@@ -84,6 +88,32 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
     margin: 0 10px 20px 0;
+}
+textarea {
+    height: 100px;
+}
+button {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(61, 194, 181);
+    margin: 1.5rem 0;
+}
+footer {
+    font-style: italic;
+    text-align: center;
+    color: slategrey;
+}
+input:focus {
+    outline: 2px solid grey;
+}
+select:focus {
+    color: black;
 }
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
