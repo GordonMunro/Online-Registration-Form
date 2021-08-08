@@ -43,6 +43,8 @@ form p {
 fieldset {
     border: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 legend {
     font-weight: bold;
@@ -61,39 +63,39 @@ input::placeholder {
     text-align: right;
     font-style: italic;
 }
-label {
-    display: block;
-}
 
 input[type="email"],
 input[type="text"],
 input[type="phone"],
 textarea,
 select {
-    display: block;
     margin: 10px 0;
     border: none;
     padding: 1rem;
     width: 100%;
     height: auto;
-    background-color: rgb(223, 221, 221);
+    background-color: rgb(240, 239, 239);
     border-radius: 5px;
     font-size: 1rem;;
+}
+.desk {
+    display: flex;
+    flex-direction: column;
 }
 #zip {
     width: 50%;
 }
+
 .box {
-    display: inline-block;
-  }
-
-.news-label {
-    margin-bottom: 10px;
+    display: flex;
+    margin: 10px 0;
 }
-
 input[type="checkbox"],
 input[type="radio"] {
-    margin: 0 10px 20px 0;
+    margin: auto 15px auto 0;
+}
+.news-label {
+    margin: 10px 0;;
 }
 textarea {
     height: 100px;
@@ -114,35 +116,34 @@ footer {
     font-style: italic;
     text-align: center;
     color: slategrey;
+    margin-top: 20px;
 }
 input:focus {
-    outline: 2px solid grey;
+    outline: 2px solid rgb(180, 174, 174);
 }
 select:focus {
     color: black;
 }
+
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     form {
         margin: 0 auto;
         max-width: 600px;
     }
-    input[type="email"],
-    input[type="text"],
-    input[type="phone"],
-    select,
-    label.contact {
-        display: inline-block;
-    }
-    input[type="email"],
-    input[type="text"],
-    input[type="phone"],
-    select {
-        width: 70%;
-    }
-    label.contact {
-        width: 25%;
-    }
     .desk {
-        display: block;
+        flex-direction: row;
     }
+    .desk input,
+    .desk select {
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
+    .desk label {
+        flex-basis: 25%;
+        margin: auto 0;
+    }
+    #zip {
+        max-width: 30%;
+    }
+}
