@@ -9,9 +9,10 @@ body {
 /* Section Styles */
 form {
     padding: 5px;
+    background-color: rgb(188, 223, 245);
 }
 header {
-    margin-bottom: -15px;
+    margin-bottom: -21px;
 }
 h1 {
     background-color: rgb(68, 67, 67);
@@ -56,12 +57,14 @@ label, header p {
     color: slategrey;
 }
 select,
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: rgb(185, 184, 184);
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
 }
 input::placeholder {
     text-align: right;
-    font-style: italic;
 }
 
 input[type="email"],
@@ -76,7 +79,7 @@ select {
     height: auto;
     background-color: rgb(240, 239, 239);
     border-radius: 5px;
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 .desk {
     display: flex;
@@ -109,7 +112,7 @@ button {
     border-radius: 5px;
     border: none;
     color: white;
-    background-color: rgb(61, 194, 181);
+    background-color: rgba(61, 194, 181, 0.4);
     margin: 1.5rem 0;
 }
 footer {
@@ -118,11 +121,22 @@ footer {
     color: slategrey;
     margin-top: 20px;
 }
-input:focus {
-    outline: 2px solid rgb(180, 174, 174);
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgb(177, 170, 170);
+    background-color: lightyellow;
+    transition: ease-in 1s;
 }
 select:focus {
     color: black;
+}
+input:required:invalid {
+    border: 2px solid rgba(247, 97, 70, 0.5);
+}
+form {
+    background-color: rgb(188, 223, 245);
 }
 
 /* Styles for larger screens */
@@ -144,6 +158,6 @@ select:focus {
         margin: auto 0;
     }
     #zip {
-        max-width: 30%;
+        max-width: 25%;
     }
 }
