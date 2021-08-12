@@ -70,6 +70,8 @@ input::placeholder {
 input[type="email"],
 input[type="text"],
 input[type="phone"],
+input[type="tel"],
+input[type="number"],
 textarea,
 select {
     margin: 10px 0;
@@ -127,7 +129,7 @@ textarea:focus {
     outline: none;
     border: 2px solid rgb(177, 170, 170);
     background-color: lightyellow;
-    transition: ease-in 1s;
+    transition: ease-in 0.5s;
 }
 select:focus {
     color: black;
