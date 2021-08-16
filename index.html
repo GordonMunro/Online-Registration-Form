@@ -14,133 +14,135 @@
     <header>
         <h1>THE CODE REVIEW</h1>
     </header>
-    
-    <form action="index.html" method="POST">
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-        <hr class="hr-1">
-        <hr class="hr-2">
-        
-        <fieldset class="field-contact">
-            <legend>Contact Information</legend>
-            <div class="desk">
-                <label class="contact" for="name">Full Name</label>
-                <input type="text" id="name" name="user-name" placeholder="Required" required>
-            </div>
-            <div class="desk">
-                <label class="contact" for="mail">Email Address</label>
-                <input type="email" id="mail" name="user-email" placeholder="Required" required>
-            </div>
-            <div class="desk">
-                <label class="contact" for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user-phone" placeholder="(xxx)xxx-xxxx">
-            </div>
-            <div class="desk">
-                <label class="contact" for="address">Street Address</label>
-                <input type="text" id="address" name="user-address" placeholder="Address">
-            </div>
-            <div class="desk">
-                <label class="contact" for="city">City</label>
-                <input type="text" id="city" name="user-city" placeholder="City">
-            </div>
-            <div class="desk">
-                <label class="contact" for="state">State</label>
-                <!-- State list html copied from https://www.freeformatter.com/usa-state-list-html-select.html -->
-                <select id="state" name="user-state">
-                    <option value="CS">Choose State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="DC">District Of Columbia</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                </select>
-            </div>
-            <div class="desk">
-                <label class="contact" for="zip">Zip Code</label>
-                <input type="text" id="zip" name="user-zip" placeholder="00000">
-            </div>
-        </fieldset>
-        <hr class="hr-3">
-        <fieldset>
-            <legend>Newsletter</legend>
-            <label class="news-label">Select the newsletters you would like to receive</label>
-                <div class="box">
-                    <input type="checkbox" id="html-news" name="news-select" value="html-news">
-                    <label for="html-news">HTML News</label><br>
+    <main>
+        <form action="index.html" method="POST">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <hr class="hr-1">
+            <hr class="hr-2">
+            
+            <fieldset class="field-contact">
+                <legend>Contact Information</legend>
+                <div class="desk">
+                    <label class="contact" for="name">Full Name</label>
+                    <input type="text" id="name" name="user-name" placeholder="Required" required>
                 </div>
-                <div class="box">
-                    <input type="checkbox" id="css-news" name="news-select" value="css-news">
-                    <label for="css-news">CSS News</label><br>
+                <div class="desk">
+                    <label class="contact" for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user-email" placeholder="Required" required>
                 </div>
-                <div class="box">
-                    <input type="checkbox" id="js-news" name="news-select" value="js-news">
-                    <label for="js-news">Javascript News</label>
+                <div class="desk">
+                    <label class="contact" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user-phone" placeholder="(xxx)xxx-xxxx">
                 </div>
-            <label class="news-label">Newsletter format</label>
-                <div class="box">
-                    <input type="radio" id="html" name="format" value="html">
-                    <label for="html">HTML</label><br>
+                <div class="desk">
+                    <label class="contact" for="address">Street Address</label>
+                    <input type="text" id="address" name="user-address" placeholder="Address">
                 </div>
-                <div class="box">
-                    <input type="radio" id="plain" name="format" value="plain">
-                    <label for="plain">Plain text</label>
+                <div class="desk">
+                    <label class="contact" for="city">City</label>
+                    <input type="text" id="city" name="user-city" placeholder="City">
                 </div>
-            <label class="news-label" for="other">Other topics you'd like to hear about</label>
-            <textarea id="other" name="user-other" placeholder="Please let us know!"></textarea>
-           
-        </fieldset>
+                <div class="desk">
+                    <label class="contact" for="state">State</label>
+                    <!-- State list html copied from https://www.freeformatter.com/usa-state-list-html-select.html -->
+                    <select id="state" name="user-state">
+                        <option value="CS">Choose State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                <div class="desk">
+                    <label class="contact" for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user-zip" placeholder="00000">
+                </div>
+            </fieldset>
+            <hr class="hr-3">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <label class="news-label">Select the newsletters you would like to receive</label>
+                    <div class="box">
+                        <input type="checkbox" id="html-news" name="news-select" value="html-news">
+                        <label for="html-news">HTML News</label><br>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" id="css-news" name="news-select" value="css-news">
+                        <label for="css-news">CSS News</label><br>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" id="js-news" name="news-select" value="js-news">
+                        <label for="js-news">Javascript News</label>
+                    </div>
+                <label class="news-label">Newsletter format</label>
+                    <div class="box">
+                        <input type="radio" id="html" name="format" value="html">
+                        <label for="html">HTML</label><br>
+                    </div>
+                    <div class="box">
+                        <input type="radio" id="plain" name="format" value="plain">
+                        <label for="plain">Plain text</label>
+                    </div>
+                <label class="news-label" for="other">Other topics you'd like to hear about</label>
+                <textarea id="other" name="user-other" placeholder="Please let us know!"></textarea>
+            
+            </fieldset>
 
-        <button type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button>
 
-        <footer>
-            <p>Copyright The Code Review</p>
-        </footer>
-    </form>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
 </body>
 </html>
